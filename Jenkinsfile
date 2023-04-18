@@ -12,7 +12,7 @@ pipeline {
  
     stage('eks cluster creation') {
       steps {
-	    eksctl create cluster -f cluster-creation.json
+	   sh 'eksctl create cluster -f cluster-creation.json'
 		    timeout(time: 30, unit: 'MINUTES') {
                     
                 } 
