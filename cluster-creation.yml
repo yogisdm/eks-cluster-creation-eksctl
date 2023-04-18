@@ -1,0 +1,15 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: sandboxClusterTest
+  region: ap-south-1
+
+vpc:
+  id: vpc-02f5c81282055fcd3
+  subnets:
+    public:
+      ap-south-1c:
+          id: subnet-075a57b6499a28503
+      ap-south-1b:
+          id: subnet-0d36717cbd025578f
